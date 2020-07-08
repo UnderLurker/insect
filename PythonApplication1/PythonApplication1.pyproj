@@ -1,0 +1,74 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>667e9b54-c7fd-4bae-b905-1be3683ff498</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>评论爬虫.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>PythonApplication1</Name>
+    <RootNamespace>PythonApplication1</RootNamespace>
+    <InterpreterId>Global|PythonCore|3.7</InterpreterId>
+    <IsWindowsApplication>False</IsWindowsApplication>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="bilibili卡片爬虫.py" />
+    <Compile Include="day03_numpy.py" />
+    <Compile Include="day03_plt.py" />
+    <Compile Include="module1.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="module3.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="module4.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="mp4.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="package1\copy.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="package1\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="评论爬虫.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="豆瓣Top250爬虫.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|ContinuumAnalytics|Anaconda37-64" />
+    <InterpreterReference Include="Global|PythonCore|3.7" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="package1\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="package1\Stylesheet1.css" />
+    <Content Include="package1\WebPage1.html" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
